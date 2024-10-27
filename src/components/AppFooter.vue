@@ -13,16 +13,14 @@
       <p>Muslim Girls School 10 Vulcan St., Etobicoke ON M9W 1L2 Timings Monday to Friday 8:00am to 4:00pm</p>
       <p><font-awesome-icon icon="bullhorn" /> Notice: JOB OPENINGS!</p>
       <p><font-awesome-icon icon="envelope" /> muslimgirlsschool@yahoo.com</p>
-      <p><font-awesome-icon icon="phone" /> tel:4164248600</p>
+      <p><font-awesome-icon icon="phone" /> tel:4162448600</p>
     </div>
     <div class="footer-section quick-links">
       <h4>Quick Links</h4>
       <ul>
-        <li><router-link to="/events">Upcoming Events</router-link></li>
-        <li><router-link to="/jobs">Job Opportunities</router-link></li>
-        <li><router-link to="/forms">Download Forms</router-link></li>
-        <li><router-link to="/gallery">Picture Gallery</router-link></li>
-        <li style="text-decoration: underline;">Secure Email Logon</li>
+        <li><router-link to="/employment" @click="scrollToTop">Job Opportunities</router-link></li>
+        <li><router-link to="/mba-registration" @click="scrollToTop">Download Forms</router-link></li>
+        <li><router-link to="/facilities" @click="scrollToTop">Picture Gallery</router-link></li>
       </ul>
     </div>
     <div class="footer-section quote-of-the-day">
@@ -54,10 +52,25 @@ export default {
     };
   },
   mounted() {
-    this.selectRandomHadith();
-    this.fetchAyah();
+    this.loadHadithAndAyah();
+    this.startAutoRefresh(); // Start checking for daily refresh
   },
   methods: {
+    loadHadithAndAyah() {
+      const lastUpdateDate = localStorage.getItem('lastUpdateDate');
+      const currentDate = new Date().toDateString(); // Get current date as string (e.g., 'Mon Oct 24 2024')
+
+      if (lastUpdateDate === currentDate) {
+        // If the stored date is the same as the current date, load from localStorage
+        this.hadithOfTheDay = JSON.parse(localStorage.getItem('hadithOfTheDay'));
+        this.ayahDetails = JSON.parse(localStorage.getItem('ayahDetails'));
+      } else {
+        // If the date has changed or no data exists, fetch new Hadith and Ayah
+        this.selectRandomHadith();
+        this.fetchAyah();
+        localStorage.setItem('lastUpdateDate', currentDate); // Save the new date
+      }
+    },
     selectRandomHadith() {
       const allHadiths = [];
       hadithData.forEach(volume => {
@@ -74,6 +87,7 @@ export default {
       if (allHadiths.length > 0) {
         const randomIndex = Math.floor(Math.random() * allHadiths.length);
         this.hadithOfTheDay = allHadiths[randomIndex];
+        localStorage.setItem('hadithOfTheDay', JSON.stringify(this.hadithOfTheDay)); // Save to localStorage
       }
     },
     fetchAyah() {
@@ -82,19 +96,37 @@ export default {
       axios.get(url)
         .then(response => {
           const data = response.data.data;
-          // Extracting the text of the Ayah and the English name of the edition
           this.ayahDetails = {
             text: data.text,
             englishName: data.surah.englishName,
             numberInSurah: data.numberInSurah
           };
+          localStorage.setItem('ayahDetails', JSON.stringify(this.ayahDetails)); // Save to localStorage
         })
         .catch(error => console.error('Error fetching Ayah:', error));
+    },
+    startAutoRefresh() {
+      setInterval(() => {
+        const currentDate = new Date().toDateString(); // Get current date as string (e.g., 'Mon Oct 24 2024')
+        const lastUpdateDate = localStorage.getItem('lastUpdateDate');
+
+        if (!lastUpdateDate || lastUpdateDate !== currentDate) {
+          // If the date has changed, fetch new Hadith and Ayah
+          this.selectRandomHadith();
+          this.fetchAyah();
+          localStorage.setItem('lastUpdateDate', currentDate); // Update the date
+        }
+      }, 1000 * 60 * 60); // Check every hour (1000 ms * 60 seconds * 60 minutes)
+    },
+    // The new scrollToTop method
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
 
   },
 };
 </script>
+
 
 <style scoped>
 .app-footer {

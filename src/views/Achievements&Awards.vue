@@ -59,7 +59,17 @@ export default {
         { name: 'Queen Elizabeth II Aiming for the Top Scholarship' },
         { name: 'Governor General\'s Bronze Academic Medal Award' },
         { name: 'Lieutenant Governor\'s Community Volunteer Award' },
-        { name: 'Ontario Scholar Award' }
+        { name: 'Ontario Scholar Award' },
+        { name: 'Mir Family Award' },
+        { name: 'Schulic Award' },
+        { name: 'Ameena Be Award' },
+        { name: ' Religious practice award' },
+        { name: 'Artisic Award' },
+        { name: 'Best Student Award' },
+        { name: ' Most Helpful and Co- Operative Student Award' },
+        { name: 'Students of the month Award ' },
+        { name: 'Student of the year Award' }
+
       ]
     };
   }
@@ -148,9 +158,9 @@ export default {
   z-index: 1;
 }
 
-.award:last-child {
+/* .award:last-child {
   flex-basis: 100%;
-}
+} */
 
 @media (max-width: 768px) {
   .award {

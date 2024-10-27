@@ -37,93 +37,7 @@
             </div>
 
         </div>
-        <div class="announcement">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">We are Hiring @.</h5>
-                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
-                                    <p class="card-text">Are you passionate about shaping young minds and making a lasting
-                                        impact on the future? We are excited to announce openings for dedicated and
-                                        enthusiastic Primary and
-                                        High School Teachers to join our dynamic educational institution.
-                                        Positions: Primary School Teacher / High School Teacher / Math Teacher (Urgent)
-                                        Location: 10 Vulcan Street Etobicoke Ontario, M9W1L2 <u
-                                            class="announcement-1-read">Read More</u>
-                                    </p>
-                                    <a href="#" class="btn announcement-action-button ">Apply Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">2023-2024 School Registration:</h5>
-
-                                    <br><br>
-                                    <div class="centered"><button class="announcement-button">Registration Information for
-                                            2023-2024 School
-                                            Year</button>
-                                    </div>
-                                    <br>
-                                    <div class="centered"><button class="announcement-button">M.A.A Registration Form (JK To
-                                            Gr-5)</button>
-                                    </div>
-                                    <br>
-                                    <div class="centered"><button class="announcement-button">M.B.A Registration Form (Gr-6
-                                            To
-                                            Gr-12)</button></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Toronto Science Fair 2023</h5>
-                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
-                                    <p class="card-text">I am thrilled to share the outstanding news of our students’
-                                        achievements at the Toronto Science Fair 2023. Our students from Grades 6, 8, and 10
-                                        have shown
-                                        exceptional talent, dedication, and innovation, resulting in their winning silver
-                                        and bronze medals,
-                                        as well as the special OACETT Award.
-
-                                        Our hounored and Price wining students are… <br><b class="bold">Grade
-                                            6:</b> <b class="name">Sumaya Yasin</b> won a Bronze Medal <br><b
-                                            class="bold">Grade 8:</b> <b class="name">Esha Rashid</b> won the (OACETT)
-                                        Special Award and a Silver Medal for her Science
-                                        Project: “Robo-Arm”
-
-                                        <u class="announcement-1-read">Read More</u>
-                                    </p>
-                                    <a href="#" class="btn announcement-action-button ">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev" style="background-color: #700000;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next" style="background-color: #700000;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
-
-
+    
         <div class="container ">
             <div class="row  justify-content-center">
                 <div class=" col-12 mx-0">
@@ -145,7 +59,7 @@
                                 <div class="col-lg-6 col-md-8 col-9 mx-0">
                                     <div class="overlay-content p-4 ">
                                         <div class="text-content fs-6">
-                                            Welcome back to Madresatul Banaat Almuslimeen/Almuslimaat, for the 2023-2024
+                                            Welcome back to Madresatul Banaat Almuslimeen/Almuslimaat, for the 2024-2025
                                             school
                                             year! I hope you all
                                             came back refreshed, rejuvenated, and ready for another year of learning,
@@ -239,7 +153,7 @@
                                         each individual shines brightly.
                                         <br>
                                         <br>
-                                        <b class="sig">Here’s to a successful and rewarding 2023-2024 school year!</b>
+                                        <b class="sig">Here’s to a successful and rewarding 2024-2025 school year!</b>
                                         <br><br>
                                         <b class="name" style="font-size: 20px;">Warm regards,</b><br>
                                         <b class="name" style="font-size: 20px;">School Principal,</b><br>
@@ -259,6 +173,92 @@
                 </div>
             </div>
         </div>
+        <div class="announcement">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">We are Hiring @.</h5>
+                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
+                                    <p class="card-text">Are you passionate about shaping young minds and making a lasting
+                                        impact on the future? We are excited to announce openings for dedicated and
+                                        enthusiastic Primary and
+                                        High School Teachers to join our dynamic educational institution.
+                                        Positions: Primary School Teacher / High School Teacher / Math Teacher (Urgent)
+                                        Location: 10 Vulcan Street Etobicoke Ontario, M9W1L2 <u
+                                            class="announcement-1-read">Read More</u>
+                                    </p>
+                                    <a href="#" class="btn announcement-action-button ">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">2024-2025 School Registration:</h5>
+
+                                    <br><br>
+                                    <div class="centered"><button class="announcement-button">Registration Information for
+                                            2024-2025 School
+                                            Year</button>
+                                    </div>
+                                    <br>
+                                    <div class="centered"><button class="announcement-button">M.A.A Registration Form (JK To
+                                            Gr-5)</button>
+                                    </div>
+                                    <br>
+                                    <div class="centered"><button class="announcement-button">M.B.A Registration Form (Gr-6
+                                            To
+                                            Gr-12)</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Toronto Science Fair 2024</h5>
+                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
+                                    <p class="card-text">I am thrilled to share the outstanding news of our students’
+                                        achievements at the Toronto Science Fair 2024. Our students from Grades 6, 8, and 10
+                                        have shown
+                                        exceptional talent, dedication, and innovation, resulting in their winning silver
+                                        and bronze medals,
+                                        as well as the special OACETT Award.
+
+                                        Our hounored and Price wining students are… <br><b class="bold">Grade
+                                            6:</b> <b class="name">Sumaya Yasin</b> won a Bronze Medal <br><b
+                                            class="bold">Grade 8:</b> <b class="name">Esha Rashid</b> won the (OACETT)
+                                        Special Award and a Silver Medal for her Science
+                                        Project: “Robo-Arm”
+
+                                        <u class="announcement-1-read">Read More</u>
+                                    </p>
+                                    <a href="#" class="btn announcement-action-button ">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev" style="background-color: #700000;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next" style="background-color: #700000;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
         <AppFooter />
     </div>
 </template>

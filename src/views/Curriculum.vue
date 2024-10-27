@@ -16,6 +16,11 @@
                                     a variety of subjects such as math, science, computers, English and the arts; we give
                                     importance to
                                     teaching these subjects within an Islamic context, where possible.
+
+                                    <!-- Added lines -->
+                                    <p><strong>Grades 9 to 12:</strong> Our school offers different credit courses that will enable students to be prepared to earn their Ontario Secondary School Diploma (OSSD) and to enter universities according to their choices.</p>
+                                    <p><strong>Grades JK to Grade 8:</strong> We offer the Ontario Curriculum with an emphasis on Math and English.</p>
+
                                     More importantly, we emphasize imparting religious education to our students in addition
                                     to the
                                     approved curriculum of the Ontario Ministry of Education. Our students obtain sound
@@ -28,8 +33,9 @@
                                         <li>Seerah [Biography of the Prophet Muhammad (SAW)]</li>
                                         <li>Fiqh (Islamic jurisprudence)</li>
                                         <li>Tafseer of the Quran (Translation and commentary of the Quran)</li>
-                                        <li>Ahadith [(sayings of the Prophet Muhammad (SAW)] and</li>
+                                        <li>Ahadith [(sayings of the Prophet Muhammad (SAW))] and</li>
                                     </ul>
+
                                     Also, our students and staff collectively offer Zuhr and Jumu’ah prayers in our
                                     gymnasium on a
                                     regular basis.
@@ -47,12 +53,17 @@
                                         <li>Educational field trips</li>
                                         <li>Eid activities (assemblies, contests and more)</li>
                                         <li>School science fair</li>
+                                        <li>Story writing & Essay Writing (Language activities)</li>
                                         <li>Contests (such as Spelling, Islamic Trivia, Colouring, Math)</li>
                                         <li>Inter-Islamic school competitions and more</li>
                                     </ul>
+
+                                    <div class="tutorProgram">
+                                        Tutoring program available for students who need additional help!
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -61,18 +72,17 @@
         <AppFooter />
     </div>
 </template>
-  
+
 <script>
 import AppHeader from '@/components/AppHeader.vue';
 import AppNav from '@/components/AppNav.vue';
 import AppFooter from '@/components/AppFooter.vue';
 
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-    name: 'Curriculum',
+    name: 'CurriculumView',
     components: {
         AppHeader,
-        AppNav,
+        AppNav,       
         AppFooter
     },
     data() {
@@ -107,7 +117,7 @@ export default {
     },
 }
 </script>
-  
+
 <style scoped>
 .program h2 {
     color: #700000;
@@ -150,5 +160,12 @@ export default {
     border: 4px solid #700000;
     transform: translate(-50%, 0%);
 }
+
+.tutorProgram{
+    color: #700000;
+    font-weight:bold;
+
+}
 </style>
-  
+
+
