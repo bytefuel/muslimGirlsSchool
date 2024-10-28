@@ -79,14 +79,14 @@
                     Information</router-link>
                 </li>
                 <li>
-                  <router-link class="nav-link dropdown-item fs-6" to="/mma-registration">MAA Registration
+                  <router-link class="nav-link dropdown-item fs-6" to="/maa-registration">MAA Registration
                     Information</router-link>
                 </li>
                 <li>
-                  <router-link class="nav-link dropdown-item fs-6" to="/about-us">MBA Registration Form</router-link>
+                  <router-link class="nav-link dropdown-item fs-6" to="/mba-registration">MBA Registration Form</router-link>
                 </li>
                 <li>
-                  <router-link class="nav-link dropdown-item fs-6" to="/about-us">MAA Registration Form</router-link>
+                  <router-link class="nav-link dropdown-item fs-6" to="/maa-registration">MAA Registration Form</router-link>
                 </li>
               </ul>
             </li>
@@ -197,8 +197,8 @@ export default {
         case "MBARegistration":
           titles.title = "MBA Registration Information";
           break;
-        case "MMARegistration":
-          titles.title = "MMA Registration Information";
+        case "MAARegistration":
+          titles.title = "MAA Registration Information";
           break;
         case "Volunteer":
           titles.title = "Volunteer";

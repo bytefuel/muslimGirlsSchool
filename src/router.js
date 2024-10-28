@@ -8,7 +8,7 @@ import Achievements from './views/Achievements&Awards.vue';
 import GirlsUniform from './views/GirlsUniform.vue';
 import Curriculum from './views/Curriculum.vue';
 import MBARegistration from './views/MBARegistration.vue';
-import MMARegistration from './views/MMARegistration.vue';
+import MAARegistration from './views/MAARegistration.vue';
 import AccessibilityPolicies from './views/AccessibilityPolicies.vue';
 import Contact from './views/Contact.vue';
 import Volunteer from './views/Volunteer.vue';
@@ -30,7 +30,7 @@ const routes = [
   { path: '/children-uniform', name: 'ChildrenUniform', component: ChildrenUniform },
   { path: '/curriculum', name: 'Curriculum', component: Curriculum },
   { path: '/mba-registration', name: 'MBARegistration', component: MBARegistration },
-  { path: '/mma-registration', name: 'MMARegistration', component: MMARegistration },
+  { path: '/maa-registration', name: 'MAARegistration', component: MAARegistration },
   { path: '/accessibility-policies', name: 'AccessibilityPolicies', component: AccessibilityPolicies },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/volunteer', name: 'Volunteer', component: Volunteer },

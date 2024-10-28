@@ -20,8 +20,9 @@ export default {
       hover: false,
       items: [
         'We are Hiring …',
-        '2023-2024 School Registration',
-        'Toronto Science Fair 2023'
+        '2024-2025 School Registration is now Open',
+        ' Please contact @ 416-244-8600 or visit: muslimgirlsschool.com',
+        'Toronto Science Fair 2024'
       ],
     };
   },
