@@ -25,7 +25,7 @@
                       <li>Copy of the latest transcript from the last school attended (Gr.9-12 students only)</li>
                     </ul>
   
-                    <button class="register-form mt-5" @click="downloadRegistrationForm">Registration Forms</button>
+                    <button class="register-form mt-5" @click="downloadRegistrationForm">Download MBA Registration Form PDF</button>
                   </div>
                 </div>
               </div>

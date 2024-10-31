@@ -31,8 +31,8 @@
                                         <li>Copy of the student’s last report card from the last school attended</li>
                                     </ul>
 
-                                    <button class="register-form mt-5" @click="downloadRegistrationForm">Registration
-                                        Forms</button>
+                                    <button class="register-form mt-5" @click="downloadRegistrationForm">Download MAA Registration
+                                        Form PDF</button>
                                 </div>
                             </div>
 

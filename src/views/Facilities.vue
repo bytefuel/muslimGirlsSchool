@@ -117,6 +117,7 @@ export default {
 .facilities-container {
   padding-left: 88px;
   padding-right: 88px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .main-floor {
@@ -127,7 +128,6 @@ export default {
   color: #000;
   font-family: Raleway;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.24px;
@@ -137,26 +137,12 @@ export default {
   color: #700000;
   font-family: Merriweather;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.4px;
 }
 
-.main-floor-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Creates 3 columns with equal width */
-  gap: 10px;
-  cursor: pointer;
-}
-
-.fair-images {
-  display: inline-flex;
-  gap: 10px;
-  cursor: pointer;
-}
-
+.main-floor-images,
 .second-floor-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,11 +150,26 @@ export default {
   cursor: pointer;
 }
 
+.fair-images {
+  display: flex; /* Change to flex for better alignment */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center images */
+  cursor: pointer;
+}
+
+.fair-image {
+  flex: 1 1 calc(25% - 10px); /* Adjust width for four images in a row */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 150px; /* Max width for the images */
+  border: 2px solid #700000; /* Optional border for clarity */
+  padding: 5px;
+}
 
 .images-layout {
   position: relative;
   flex: 1;
-  height: 488px;
+  height: 488px; /* Adjust height as needed */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -187,8 +188,8 @@ export default {
 }
 
 .image_1 {
-  width: 384px;
-  height: 256px;
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
   border: 4px solid #700000;
   padding: 5px;
 }
@@ -199,39 +200,108 @@ export default {
 }
 
 .image_2 {
-  width: 461px;
-  height: 306px;
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
   border: 4px solid #EBE3D8;
   padding: 5px;
 }
-
 
 .facilities-start {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 2em;
-
 }
 
 .facilities-text {
   flex: 1;
   padding-right: 20px;
   padding-top: 30px;
-  text-align: left;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.78);
   text-align: center;
   font-family: Merriweather;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.24px;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .facilities-container {
+    padding-left: 16px; /* Reduced padding */
+    padding-right: 16px; /* Reduced padding */
+  }
 
+  .facilities-start {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .main-floor {
+    margin: 10px 0;
+  }
 
+  .main-floor-title {
+    font-size: 30px; /* Reduced font size for smaller screens */
+  }
+
+  .main-floor p {
+    font-size: 18px; /* Adjusted paragraph font size */
+  }
+
+  .main-floor-images,
+  .second-floor-images {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+
+  .fair-images {
+    justify-content: center; /* Center images */
+  }
+
+  .fair-image {
+    flex: 1 1 calc(50% - 10px); /* Adjust width for two images in a row */
+  }
+
+  .image_1,
+  .image_2 {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 4px solid #700000; /* Maintain border for consistent look */
+    padding: 5px; /* Consistent padding */
+  }
+
+  .images-layout {
+    height: auto; /* Allow height to adjust for smaller screens */
+  }
+
+  .border_1,
+  .border_2 {
+    position: static; /* Remove absolute positioning for better layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-floor-title {
+    font-size: 24px; /* Further reduced font size */
+  }
+
+  .main-floor p {
+    font-size: 16px; /* Further adjusted paragraph font size */
+  }
+
+  .main-floor-images,
+  .second-floor-images {
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+
+  .facilities-text {
+    font-size: 20px; /* Adjusted text size for mobile */
+  }
+
+  .fair-image {
+    flex: 1 1 100%; /* Full width for images on mobile */
+    max-width: 100%; /* Ensure they don't exceed the container width */
+  }
+}
 </style>
-  
