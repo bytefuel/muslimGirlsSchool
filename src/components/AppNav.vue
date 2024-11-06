@@ -83,10 +83,10 @@
                     Information</router-link>
                 </li>
                 <li>
-                  <router-link class="nav-link dropdown-item fs-6" to="/mba-registration">MBA Registration Form</router-link>
+                  <a class="nav-link dropdown-item fs-6" href="/mba-registration-form.pdf" download>MBA Registration Form</a>
                 </li>
                 <li>
-                  <router-link class="nav-link dropdown-item fs-6" to="/maa-registration">MAA Registration Form</router-link>
+                  <a class="nav-link dropdown-item fs-6" href="/maa-registration-form.pdf" download>MAA Registration Form</a>
                 </li>
               </ul>
             </li>
@@ -185,7 +185,7 @@ export default {
         case "Employment":
           titles.title = "Employment";
           break;
-        case "Facilities":
+        case "FacilitiesPage":
           titles.title = "Facilities";
           break;
         case "GirlsUniform":

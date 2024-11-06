@@ -13,7 +13,7 @@ import AccessibilityPolicies from './views/AccessibilityPolicies.vue';
 import Contact from './views/Contact.vue';
 import Volunteer from './views/Volunteer.vue';
 import Employment from './views/Employment.vue';
-import Facilities from './views/Facilities.vue';
+import FacilitiesPage from './views/FacilitiesPage.vue';
 import Donate from './views/Donate.vue';
 import ChildrenUniform from './views/ChildrenUniform.vue';
 import Covid19 from './views/Covid19.vue';
@@ -35,7 +35,7 @@ const routes = [
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/volunteer', name: 'Volunteer', component: Volunteer },
   { path: '/employment', name: 'Employment', component: Employment },
-  { path: '/facilities', name: 'Facilities', component: Facilities },
+  { path: '/facilities', name: 'FacilitiesPage', component: FacilitiesPage },
   { path: '/donate', name: 'Donate', component: Donate },
   { path: '/covid-19', name: 'Covid19', component: Covid19 },
 ];

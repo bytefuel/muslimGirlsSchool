@@ -199,25 +199,30 @@
                         <div class="cards-wrapper">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">2024-2025 School Registration:</h5>
+                                <h5 class="card-title">2024-2025 School Registration:</h5>
 
-                                    <br><br>
-                                    <div class="centered"><button class="announcement-button">Registration Information for
-                                            2024-2025 School
-                                            Year</button>
-                                    </div>
-                                    <br>
-                                    <div class="centered"><button class="announcement-button">M.A.A Registration Form (JK To
-                                            Gr-5)</button>
-                                    </div>
-                                    <br>
-                                    <div class="centered"><button class="announcement-button">M.B.A Registration Form (Gr-6
-                                            To
-                                            Gr-12)</button></div>
-                                </div>
-                            </div>
+                                <br><br>
+                        <div class="centered">
+                            <a href="/mba-registration" class="announcement-button btn w-100">
+                                 Registration Information for 2024-2025 School Year
+                            </a>
+                        </div>
+                                <br>
+                        <div class="centered">
+                            <a href="/maa-registration-form.pdf" download class="announcement-button btn w-100">
+                                M.A.A Registration Form (JK To Gr-5)
+                             </a>
+                        </div>
+                                <br>
+                        <div class="centered">
+                            <a href="/mba-registration-form.pdf" download class="announcement-button btn w-100">
+                                M.B.A Registration Form (Gr-6 To Gr-12)
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
