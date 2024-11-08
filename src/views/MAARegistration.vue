@@ -31,8 +31,8 @@
                                         <li>Copy of the student’s last report card from the last school attended</li>
                                     </ul>
 
-                                    <button class="register-form mt-5" @click="downloadRegistrationForm">Registration
-                                        Forms</button>
+                                    <button class="register-form mt-5" @click="downloadRegistrationForm">Download MAA Registration
+                                        Form PDF</button>
                                 </div>
                             </div>
 
@@ -47,12 +47,12 @@
 </template>
   
 <script>
-import AppHeader from '@/components/AppHeader.vue'; // Update the import paths as necessary
+import AppHeader from '@/components/AppHeader.vue'; 
 import AppNav from '@/components/AppNav.vue';
 import AppFooter from '@/components/AppFooter.vue';
 
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
+    
     name: 'MAARegistration',
     components: {
         AppHeader,
@@ -61,21 +61,20 @@ export default {
     },
     methods: {
       downloadRegistrationForm() {
-        // URL to the PDF form file
-        const pdfUrl = '/maa-registration-form.pdf'; // Make sure to set the correct path to your PDF
+      
+        const pdfUrl = '/maa-registration-form.pdf'; 
   
-        // Create an anchor element
+        
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.setAttribute('download', 'MAA_RegistrationForm.pdf'); // Specify the name of the file to be downloaded
-  
-        // Append the anchor to the body
+        link.setAttribute('download', 'MAA_RegistrationForm.pdf'); 
+     
         document.body.appendChild(link);
   
-        // Trigger the download by simulating a click event
+       
         link.click();
   
-        // Remove the anchor element after the download
+        
         document.body.removeChild(link);
       }
     }
@@ -100,7 +99,7 @@ export default {
 
 .text-content {
 
-    /* Styles for the program descriptions */
+   
     color: rgba(0, 0, 0, 0.78);
     font-family: Raleway;
     font-style: normal;
@@ -108,18 +107,18 @@ export default {
     line-height: 36px;
     letter-spacing: 0.24px;
 
-    /* Adjust as needed for spacing between paragraphs */
+    
 }
 
 
 
 .overlay-content {
     display: flex;
-    /* Enable Flexbox */
+   
     justify-content: space-between;
-    /* Space between the text and image */
+   
     align-items: flex-start;
-    /* Align items to the flex-start of the flex container */
+    
 }
 
 .overlay-message {
