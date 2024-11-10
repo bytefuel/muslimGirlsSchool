@@ -187,10 +187,9 @@
                                         enthusiastic Primary and
                                         High School Teachers to join our dynamic educational institution.
                                         Positions: Primary School Teacher / High School Teacher / Math Teacher (Urgent)
-                                        Location: 10 Vulcan Street Etobicoke Ontario, M9W1L2 <u
-                                            class="announcement-1-read">Read More</u>
+                                        Location: 10 Vulcan Street Etobicoke Ontario, M9W1L2
                                     </p>
-                                    <a href="#" class="btn announcement-action-button ">Apply Now</a>
+                                    <router-link to="/employment" @click="scrollToTop" class="btn announcement-action-button ">Read more</router-link>
                                 </div>
                             </div>
                         </div>
@@ -241,10 +240,8 @@
                                             class="bold">Grade 8:</b> <b class="name">Esha Rashid</b> won the (OACETT)
                                         Special Award and a Silver Medal for her Science
                                         Project: “Robo-Arm”
-
-                                        <u class="announcement-1-read">Read More</u>
                                     </p>
-                                    <a href="#" class="btn announcement-action-button ">Read more</a>
+                                    <router-link to="/about-us" @click="scrollToTop" class="btn announcement-action-button ">Read more</router-link>
                                 </div>
                             </div>
                         </div>

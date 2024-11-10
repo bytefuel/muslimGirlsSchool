@@ -1,12 +1,12 @@
 <template>
   <footer class="app-footer">
     <div class="footer-section hadith-of-the-day">
-  <h4>Hadith of the Day</h4>
-  <p v-if="hadithOfTheDay">
-    {{ hadithOfTheDay.text }} ({{ hadithOfTheDay.by }}) -  Sahih al-Bukhari
-  </p>
-  <p v-else>Loading Hadith of the Day...</p>
-</div>
+      <h4>Hadith of the Day</h4>
+      <p v-if="hadithOfTheDay">
+        {{ hadithOfTheDay.text }} ({{ hadithOfTheDay.by }}) - Sahih al-Bukhari
+      </p>
+      <p v-else>Loading Hadith of the Day...</p>
+    </div>
 
     <div class="footer-section notice-contact">
       <h4>Contact Us</h4>
@@ -30,6 +30,7 @@
         <li><router-link to="/employment" @click="scrollToTop">Job Opportunities</router-link></li>
         <li><router-link to="/mba-registration" @click="scrollToTop">Download Forms</router-link></li>
         <li><router-link to="/facilities" @click="scrollToTop">Picture Gallery</router-link></li>
+        <li><a href="https://webmail.muslimgirlsschool.com" target="_blank" rel="noopener noreferrer">Secure Email Logon</a></li>
       </ul>
     </div>
     <div class="footer-section quote-of-the-day">
@@ -45,7 +46,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBullhorn, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
-import hadithData from '@/assets/hadiths.json'; 
+import hadithData from '@/assets/hadiths.json';
 
 library.add(faBullhorn, faEnvelope, faPhone);
 
@@ -56,28 +57,28 @@ export default {
   },
   data() {
     return {
-      hadithOfTheDay: null, 
-      ayahDetails: null, 
+      hadithOfTheDay: null,
+      ayahDetails: null,
     };
   },
   mounted() {
     this.loadHadithAndAyah();
-    this.startAutoRefresh(); 
+    this.startAutoRefresh();
   },
   methods: {
     loadHadithAndAyah() {
       const lastUpdateDate = localStorage.getItem('lastUpdateDate');
-      const currentDate = new Date().toDateString(); 
+      const currentDate = new Date().toDateString();
 
       if (lastUpdateDate === currentDate) {
-       
+
         this.hadithOfTheDay = JSON.parse(localStorage.getItem('hadithOfTheDay'));
         this.ayahDetails = JSON.parse(localStorage.getItem('ayahDetails'));
       } else {
-       
+
         this.selectRandomHadith();
         this.fetchAyah();
-        localStorage.setItem('lastUpdateDate', currentDate); 
+        localStorage.setItem('lastUpdateDate', currentDate);
       }
     },
     selectRandomHadith() {
@@ -96,7 +97,7 @@ export default {
       if (allHadiths.length > 0) {
         const randomIndex = Math.floor(Math.random() * allHadiths.length);
         this.hadithOfTheDay = allHadiths[randomIndex];
-        localStorage.setItem('hadithOfTheDay', JSON.stringify(this.hadithOfTheDay)); 
+        localStorage.setItem('hadithOfTheDay', JSON.stringify(this.hadithOfTheDay));
       }
     },
     fetchAyah() {
@@ -110,24 +111,24 @@ export default {
             englishName: data.surah.englishName,
             numberInSurah: data.numberInSurah
           };
-          localStorage.setItem('ayahDetails', JSON.stringify(this.ayahDetails)); 
+          localStorage.setItem('ayahDetails', JSON.stringify(this.ayahDetails));
         })
         .catch(error => console.error('Error fetching Ayah:', error));
     },
     startAutoRefresh() {
       setInterval(() => {
-        const currentDate = new Date().toDateString(); 
+        const currentDate = new Date().toDateString();
         const lastUpdateDate = localStorage.getItem('lastUpdateDate');
 
         if (!lastUpdateDate || lastUpdateDate !== currentDate) {
-          
+
           this.selectRandomHadith();
           this.fetchAyah();
-          localStorage.setItem('lastUpdateDate', currentDate); 
+          localStorage.setItem('lastUpdateDate', currentDate);
         }
-      }, 1000 * 60 * 60); 
+      }, 1000 * 60 * 60);
     },
-   
+
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
@@ -164,8 +165,8 @@ export default {
 }
 
 .footer-section ul {
-  list-style-type: none; 
-  padding-left: 0; 
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .notice-contact {
@@ -178,32 +179,32 @@ export default {
 
 .job-link {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
   margin-left: 5px;
 }
 
 .contact-link {
   color: white;
-  text-decoration: none; 
-  margin-left: 5px; 
+  text-decoration: none;
+  margin-left: 5px;
 }
 
 .contact-icon {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 .footer-section ul li a {
-  color: white; 
-  text-decoration: none; 
-  cursor: pointer; 
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.01em;
-  transition: color 0.3s, text-decoration 0.3s; 
+  transition: color 0.3s, text-decoration 0.3s;
 }
 
 .footer-section ul li a:hover {
-  text-decoration: underline; 
-  color: #FFD700; 
+  text-decoration: underline;
+  color: #FFD700;
 }
 
 .footer-section p {
@@ -211,8 +212,8 @@ export default {
   letter-spacing: 0.01em;
 }
 
-.footer-section.notice-contact, 
-.footer-section.quick-links, 
+.footer-section.notice-contact,
+.footer-section.quick-links,
 .footer-section.quote-of-the-day {
   padding-top: 20px;
 }
@@ -224,18 +225,18 @@ export default {
     justify-content: space-between;
   }
 
-  .hadith-of-the-day, 
+  .hadith-of-the-day,
   .notice-contact {
-    flex-basis: 50%; 
+    flex-basis: 50%;
   }
 
-  .quick-links, 
+  .quick-links,
   .quote-of-the-day {
-    flex-basis: 25%; 
+    flex-basis: 25%;
   }
 
-  .quick-links, 
-  .quote-of-the-day, 
+  .quick-links,
+  .quote-of-the-day,
   .contact-info {
     text-align: center;
     align-items: flex-start;
