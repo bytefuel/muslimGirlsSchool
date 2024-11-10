@@ -7,7 +7,8 @@
     <div class="facilities-container container">
       <div class="row facilities-start">
         
-        <div class="col-12 col-md-6 facilities-text">
+        <!-- Text Section - Col adjustment for responsive layout -->
+        <div class="col-12 col-lg-6 facilities-text">
           <p>
             We are pleased to announce that we<br> have expanded our facilities to meet the<br> growing needs of our
             students and the<br> community. In September 2006,<br> construction of the (approx. 6000 sq. ft)<br> second
@@ -15,49 +16,42 @@
           </p>
         </div>
 
-        
-        <div class="col-12 col-md-6 images-layout">
-          <div class="row">
-         
-            <div class="col-12 col-md-6 mb-3">
-              <img class="image_1 img-fluid" src='@/assets/facilities_2.png' alt="Facilities 2">
-            </div>
-
-            <div class="col-12 col-md-6 mb-3">
-              <img class="image_2 img-fluid" src='@/assets/facilities_1.png' alt="Facilities 1">
-            </div>
+        <!-- Image Collage Section - Using responsive columns for image layout -->
+        <div class="col-12 col-lg-6 images-layout">
+          <div class="collage-container d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <!-- Images stack vertically on small screens and side by side on medium+ screens -->
+            <img class="collage-image collage-image-1 img-fluid" src="@/assets/facilities_2.png" alt="Facilities 2" />
+            <img class="collage-image collage-image-2 img-fluid" src="@/assets/facilities_1.png" alt="Facilities 1" />
           </div>
         </div>
       </div>
 
-    
+      <!-- Main Floor Section -->
       <div class="main-floor">
         <h2 class="main-floor-title">Main Floor</h2>
         <p>Primary classes, from JK-Grade 5 (Madresatul Atfaal Almuslimeen), are conducted on the main level. The main
           floor facilities include:</p>
         <div class="main-floor-images row">
-          
           <img v-for="(src, index) in mainFloorImages" :key="index" :src="src" alt="MainFloor"
             @click="openLightbox(mainFloorImages, index)" class="col-12 col-sm-6 col-md-4 mb-3 img-fluid" />
         </div>
       </div>
 
+      <!-- Second Floor Section -->
       <div class="main-floor">
         <h2 class="main-floor-title">Second Floor</h2>
         <p>Intermediate and secondary classes, from Grades 6-12 (Madresatul Banaat Almuslimaat) are held on the second
           level. The second floor facilities include:</p>
         <div class="second-floor-images row">
-          
           <img v-for="(src, index) in secondFloorImages" :key="index" :src="src" alt="SecondFloor"
             @click="openLightbox(secondFloorImages, index)" class="col-12 col-sm-6 col-md-4 mb-3 img-fluid" />
         </div>
       </div>
 
-   
+      <!-- Extra Curricular Activities Section -->
       <div class="main-floor">
         <h2 class="main-floor-title">Extra Curricular Activities</h2>
         <div class="fair-images row">
-          <!-- Adjusted size for Extra Curricular Activities images -->
           <img v-for="(src, index) in extraCurricularImages" :key="index" :src="src" alt="Fairs"
             @click="openLightbox(extraCurricularImages, index)" class="col-12 col-sm-6 col-md-3 col-lg-2 mb-3 img-fluid" />
         </div>
@@ -125,7 +119,6 @@ export default {
 .facilities-container {
   padding-left: 15px;
   padding-right: 15px;
-  cursor: pointer;
 }
 
 .main-floor {
@@ -137,8 +130,6 @@ export default {
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.24px;
 }
 
 .main-floor-title {
@@ -146,29 +137,6 @@ export default {
   font-family: Merriweather, serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.4px;
-}
-
-.images-layout {
-  position: relative;
-}
-
-.border_1,
-.border_2 {
-  position: absolute;
-}
-
-.image_1 {
-  width: 100%;
-  border: 4px solid #700000;
-  padding: 5px;
-}
-
-.image_2 {
-  width: 100%;
-  border: 4px solid #EBE3D8;
-  padding: 5px;
 }
 
 .facilities-start {
@@ -176,7 +144,7 @@ export default {
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 2em;
-  
+  padding-bottom: 20px;
 }
 
 .facilities-text {
@@ -184,22 +152,83 @@ export default {
   font-family: Merriweather, sans-serif;
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.24px;
 }
 
+.collage-container {
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.collage-image {
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+  
+}
+
+.collage-image-1 {
+  border: 4px solid #700000;
+  transform: rotate(-5deg);
+  padding: 5px;
+}
+
+.collage-image-2 {
+  border: 4px solid #ebe3d8;
+  transform: rotate(5deg);
+  padding: 5px;
+}
+
+.collage-image:hover {
+  transform: scale(1.05);
+}
+
+
+.main-floor-images img,
+.second-floor-images img {
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.main-floor-images img:hover,
+.second-floor-images img:hover {
+  transform: scale(1.05);
+}
 
 .fair-images img {
-  width: 100%;
-  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.fair-images img:hover {
+  transform: scale(1.05);
 }
 
 
-.fair-images .col-md-3 {
-  flex: 0 0 25%; 
-}
-
-.fair-images .col-lg-2 {
-  flex: 0 0 16.6667%; 
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .collage-container {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .facilities-start {
+    flex-direction: column;
+    text-align: center;
+  }
+  .collage-image {
+    max-width: 300px;
+    transform: none;
+  }
 }
 </style>
