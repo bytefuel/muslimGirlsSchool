@@ -113,9 +113,6 @@
               <router-link class="nav-link" to="/accessibility-policies">Accessibility Policies</router-link>
             </li>
             <li class="nav-link">
-              <router-link class="nav-link" to="/covid-19">Covid 19</router-link>
-            </li>
-            <li class="nav-link">
               <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
           </ul>
