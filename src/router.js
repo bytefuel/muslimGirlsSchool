@@ -16,7 +16,6 @@ import Employment from './views/Employment.vue';
 import FacilitiesPage from './views/FacilitiesPage.vue';
 import Donate from './views/Donate.vue';
 import ChildrenUniform from './views/ChildrenUniform.vue';
-import Covid19 from './views/Covid19.vue';
 
 // Define your route records
 const routes = [
@@ -36,8 +35,7 @@ const routes = [
   { path: '/volunteer', name: 'Volunteer', component: Volunteer },
   { path: '/employment', name: 'Employment', component: Employment },
   { path: '/facilities', name: 'FacilitiesPage', component: FacilitiesPage },
-  { path: '/donate', name: 'Donate', component: Donate },
-  { path: '/covid-19', name: 'Covid19', component: Covid19 },
+  { path: '/donate', name: 'Donate', component: Donate }
 ];
 
 // Create the router instance
