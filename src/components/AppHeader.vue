@@ -1,29 +1,26 @@
 <template>
   <header>
-  <div class="tickerwrapper" @mouseenter="hover = true" @mouseleave="hover = false">
-    <div class="ticker">
-      <div class="list">
-        <!-- Use a div for each item and replicate the items 5 times -->
-        <div class="listitem" v-for="(item, index) in replicatedItems" :key="index">
-          {{ item.text }}<span v-if="!item.last"> • </span>
+    <div class="tickerwrapper" @mouseenter="hover = true" @mouseleave="hover = false">
+      <div class="ticker">
+        <div class="list">
+          <!-- Use a div for each item and replicate the items 5 times -->
+          <div class="listitem" v-for="(item, index) in replicatedItems" :key="index">
+            {{ item.Title || "No Title" }}<span v-if="!item.last"> • </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
       hover: false,
-      items: [
-        'We are Hiring …',
-        '2024-2025 School Registration is now Open',
-        ' Please contact @ 416-244-8600 or visit: muslimgirlsschool.com',
-        'Toronto Science Fair 2024'
-      ],
+      announcements: [], // Data fetched from Strapi
     };
   },
   computed: {
@@ -31,16 +28,38 @@ export default {
       let replicated = [];
       // Repeat 5 times
       for (let i = 0; i < 5; i++) {
-        // Concatenate the items array with an indication if it's the last item in the set
-        this.items.forEach((item, index, array) => {
-          replicated.push({ text: item, last: i === 4 && index === array.length - 1 });
+        // Concatenate the announcements array with an indication if it's the last item in the set
+        this.announcements.forEach((announcement, index, array) => {
+          replicated.push({
+            Title: announcement.Title, // Fallback handled in template
+            last: i === 4 && index === array.length - 1,
+          });
         });
       }
       return replicated;
     },
   },
+  methods: {
+    async fetchAnnouncements() {
+      try {
+        const response = await axios.get(
+          "http://localhost:1337/api/announcements" // Update URL if Strapi API is hosted elsewhere
+        );
+        // Correctly map the response to extract Title and other relevant fields
+        this.announcements = response.data.data.map((item) => ({
+          Title: item.Message[0]?.children[0]?.text || null, // Extract the text field safely
+        }));
+      } catch (error) {
+        console.error("Error fetching announcements:", error);
+      }
+    },
+  },
+  mounted() {
+    this.fetchAnnouncements();
+  },
 };
 </script>
+
 <style scoped>
 header {
   background: #700000;

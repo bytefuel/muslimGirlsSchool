@@ -6,27 +6,36 @@
             <div class="container d-grid">
                 <div class="row justify-content-sm-center">
                     <div class="col-12  ">
-                        <h1 class="heading justify-content-sm-center mx-4">Madresatul Banaat Almuslimaat:<br>Muslim Girls
+                        <h1 class="heading justify-content-sm-center mx-4">Madresatul Banaat Almuslimaat:<br>Muslim
+                            Girls
                             School</h1>
                         <p class="paragraph justify-content-sm-center mx-4">It began with a vision…to organize an
                             institution for the education of Muslim
                             girls in
-                            an Islamic environment. Beginning with a small school with only 4 classrooms, we have expanded
+                            an Islamic environment. Beginning with a small school with only 4 classrooms, we have
+                            expanded
                             over the
-                            years to what is now a full facility school with two floors, offering education from JK – Grade
+                            years to what is now a full facility school with two floors, offering education from JK –
+                            Grade
                             12.
-                            Alhamdulillah, we are serving a population of ~5, 000 Muslims in the immediate vicinity of the
+                            Alhamdulillah, we are serving a population of ~5, 000 Muslims in the immediate vicinity of
+                            the
                             school
-                            (Etobicoke). In addition to this, many of our students travel from our neighbouring cities such
+                            (Etobicoke). In addition to this, many of our students travel from our neighbouring cities
+                            such
                             as
-                            Mississauga, Brampton, Richmond Hill, Barrie and Woodbridge to attend our school. Our students
+                            Mississauga, Brampton, Richmond Hill, Barrie and Woodbridge to attend our school. Our
+                            students
                             come from
-                            a diverse array of families and ethnic backgrounds. As a non-profit, charitable organization, we
+                            a diverse array of families and ethnic backgrounds. As a non-profit, charitable
+                            organization, we
                             also
-                            offer education to orphans and children from single mothers, widows, or less fortunate parents,
+                            offer education to orphans and children from single mothers, widows, or less fortunate
+                            parents,
                             who are
                             helped through our Zakaat fund.
-                            Our school facilities are also being used by other members of our community for programs such as
+                            Our school facilities are also being used by other members of our community for programs
+                            such as
                             Arabic
                             language studies, which are held at our school on the weekends.
                             Thanks.</p>
@@ -37,7 +46,7 @@
             </div>
 
         </div>
-    
+
         <div class="container ">
             <div class="row  justify-content-center">
                 <div class=" col-12 mx-0">
@@ -50,7 +59,8 @@
                             </div>
                             <div class="row">
                                 <div class="col text-start">
-                                    <h1 class="announcement-1-heading" style="padding-left: 88px;">Dear Students, Parents
+                                    <h1 class="announcement-1-heading" style="padding-left: 88px;">Dear Students,
+                                        Parents
                                         and
                                         Guardians,</h1>
                                 </div>
@@ -66,10 +76,12 @@
                                             growth,
                                             and
                                             community building.
-                                            As we embark on this new academic journey together, I want to take a moment to
+                                            As we embark on this new academic journey together, I want to take a moment
+                                            to
                                             express
                                             my heartfelt
-                                            gratitude to each and every one of you. The past years have posed their share of
+                                            gratitude to each and every one of you. The past years have posed their
+                                            share of
                                             challenges, but your
                                             resilience, dedication, and unwavering support have truly made a difference.
                                             Together,
@@ -88,13 +100,16 @@
                                     <div class="overlay-content-continue my-5  fs-6">
                                         <b
                                             style="color: #700000;font-family: 'Raleway', sans-serif;font-size: 20px;font-style: normal;font-weight: 600;line-height: 30px;letter-spacing: 0.2px;">For
-                                            our students</b>, this year offers a fresh opportunity to explore new subjects,
+                                            our students</b>, this year offers a fresh opportunity to explore new
+                                        subjects,
                                         cultivate talents, and
-                                        make lasting friendships. Remember, the school is not just a place to gain knowledge
+                                        make lasting friendships. Remember, the school is not just a place to gain
+                                        knowledge
                                         but
                                         a
                                         platform to
-                                        develop life skills, empathy, and a sense of responsibility that will serve you well
+                                        develop life skills, empathy, and a sense of responsibility that will serve you
+                                        well
                                         beyond
                                         these walls.
 
@@ -106,7 +121,8 @@
                                         commendable. Your passion, expertise, and hard work lay the foundation for our
                                         students’
                                         success. Your
-                                        dedication does not go unnoticed, and I am excited to witness the positive impact
+                                        dedication does not go unnoticed, and I am excited to witness the positive
+                                        impact
                                         you
                                         will
                                         continue to have
@@ -118,33 +134,40 @@
                                         engagement,
                                         and
                                         collaboration
-                                        play a pivotal role in creating a thriving educational ecosystem. Let’s work hand in
+                                        play a pivotal role in creating a thriving educational ecosystem. Let’s work
+                                        hand in
                                         hand to
                                         ensure the best
                                         possible educational experience for our students.
                                         <br><br>
-                                        Throughout this school year, we will continue to prioritize safety, well-being, and
+                                        Throughout this school year, we will continue to prioritize safety, well-being,
+                                        and
                                         open
                                         communication. We
                                         remain vigilant in our efforts to maintain a healthy and secure learning
                                         environment,
                                         following the guidance
                                         of health authorities to mitigate any challenges that may arise.
-                                        I encourage you to take advantage of the various opportunities our school offers –
+                                        I encourage you to take advantage of the various opportunities our school offers
+                                        –
                                         academic,
-                                        extracurricular, and community engagement. These experiences enrich our lives and
+                                        extracurricular, and community engagement. These experiences enrich our lives
+                                        and
                                         contribute
                                         to the vibrant
                                         tapestry of our school community.
-                                        Please stay tuned for updates on important dates, events, and initiatives through
+                                        Please stay tuned for updates on important dates, events, and initiatives
+                                        through
                                         our
                                         school’s communication
-                                        channels. Feel free to reach out to us with any questions, suggestions, or concerns
+                                        channels. Feel free to reach out to us with any questions, suggestions, or
+                                        concerns
                                         you
                                         may
                                         have. We are
                                         here to support you in every way possible.
-                                        Once again, welcome back to Madresatul Banaat Almuslimeen/Almuslimaat! Let’s make
+                                        Once again, welcome back to Madresatul Banaat Almuslimeen/Almuslimaat! Let’s
+                                        make
                                         this
                                         academic year one of
                                         discovery, growth, and accomplishment. Together, we can create a positive and
@@ -164,7 +187,7 @@
 
                                 </div>
                             </div>
-                            
+
                         </div>
 
 
@@ -176,100 +199,61 @@
         <div class="announcement">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <!-- Loop through the carousel announcements -->
+                    <div v-for="(announcement, index) in carouselAnnouncements" :key="announcement.id"
+                        :class="['carousel-item', { 'active': index === 0 }]">
                         <div class="cards-wrapper">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">We are Hiring @.</h5>
-                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
-                                    <p class="card-text">Are you passionate about shaping young minds and making a lasting
-                                        impact on the future? We are excited to announce openings for dedicated and
-                                        enthusiastic Primary and
-                                        High School Teachers to join our dynamic educational institution.
-                                        Positions: Primary School Teacher / High School Teacher / Math Teacher (Urgent)
-                                        Location: 10 Vulcan Street Etobicoke Ontario, M9W1L2
-                                    </p>
-                                    <router-link to="/employment" @click="scrollToTop" class="btn announcement-action-button ">Read more</router-link>
+                                    <h5 class="card-title">{{ announcement.title }}</h5>
+                                    <p class="announcement-1-subheading">{{ announcement.subheading }}</p>
+                                    <div class="card-text" v-html="announcement.content"></div>
+
+                                    <div v-if='announcement.link' class="centered">
+                                        <router-link :to="announcement.link" @click="scrollToTop"
+                                            class="btn announcement-action-button w-100">
+                                            Read more
+                                        </router-link>
+                                    </div>
+
+                                        <!-- Render Buttons -->
+                                        <div v-if="announcement.buttons && announcement.buttons.length"
+                                            class="buttons-container">
+                                            <button v-for="(button, idx) in announcement.buttons" :key="idx"
+                                                :class="['btn', `btn-${button.style}`, 'announcement-action-button']"
+                                                @click="navigate(button.url)">
+                                                {{ button.label }}
+                                            </button>
+                                        </div>
+
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <div class="card-body">
-                                <h5 class="card-title">2024-2025 School Registration:</h5>
-
-                                <br><br>
-                        <div class="centered">
-                            <a href="/mba-registration" class="announcement-button btn w-100">
-                                 Registration Information for 2024-2025 School Year
-                            </a>
-                        </div>
-                                <br>
-                        <div class="centered">
-                            <a href="/maa-registration-form.pdf" download class="announcement-button btn w-100">
-                                M.A.A Registration Form (JK To Gr-5)
-                             </a>
-                        </div>
-                                <br>
-                        <div class="centered">
-                            <a href="/mba-registration-form.pdf" download class="announcement-button btn w-100">
-                                M.B.A Registration Form (Gr-6 To Gr-12)
-                            </a>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev" style="background-color: #700000;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next" style="background-color: #700000;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
+
+            <AppFooter />
         </div>
-                    <div class="carousel-item">
-                        <div class="cards-wrapper">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Toronto Science Fair 2024</h5>
-                                    <p class="announcement-1-subheading">Primary and High School Teachers Wanted!</p>
-                                    <p class="card-text">I am thrilled to share the outstanding news of our students’
-                                        achievements at the Toronto Science Fair 2024. Our students from Grades 6, 8, and 10
-                                        have shown
-                                        exceptional talent, dedication, and innovation, resulting in their winning silver
-                                        and bronze medals,
-                                        as well as the special OACETT Award.
-
-                                        Our hounored and Price wining students are… <br><b class="bold">Grade
-                                            6:</b> <b class="name">Sumaya Yasin</b> won a Bronze Medal <br><b
-                                            class="bold">Grade 8:</b> <b class="name">Esha Rashid</b> won the (OACETT)
-                                        Special Award and a Silver Medal for her Science
-                                        Project: “Robo-Arm”
-                                    </p>
-                                    <router-link to="/about-us" @click="scrollToTop" class="btn announcement-action-button ">Read more</router-link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev" style="background-color: #700000;">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next" style="background-color: #700000;">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
-
-        <AppFooter />
-    </div>
 </template>
-  
+
 <script>
 import AppHeader from '@/components/AppHeader.vue';
 import AppNav from '@/components/AppNav.vue';
 import AppFooter from '@/components/AppFooter.vue';
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
@@ -280,18 +264,32 @@ export default {
         AppFooter
     },
     setup() {
+        const carouselAnnouncements = ref([]);
+
+        // Fetch carousel announcements from Strapi
+        const fetchCarouselAnnouncements = async () => {
+            try {
+                const response = await fetch('http://localhost:1337/api/carousel-announcements?populate=*'); // Adjust the URL based on your Strapi setup
+                const data = await response.json();
+                carouselAnnouncements.value = data.data;
+            } catch (error) {
+                console.error('Error fetching carousel announcements:', error);
+            }
+        };
+
         onMounted(() => {
             document.title = 'Muslim Girl School';
+            fetchCarouselAnnouncements();
         });
 
-        onUnmounted(() => {
-            document.title = 'Muslim Girl School';
-        });
-    },
+        return {
+            carouselAnnouncements
+        };
+    }
 
 }
 </script>
-  
+
 <style scoped>
 .text-content {
     color: rgba(0, 0, 0, 0.78);
@@ -416,7 +414,22 @@ export default {
     letter-spacing: 0.14px;
     cursor: pointer;
     border-radius: 3px;
-    background: #700000;
+    background: #700000 !important;
+}
+
+a{
+    padding: 15px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.14px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #700000 !important;
 }
 
 .announcement-1-content {
@@ -654,4 +667,3 @@ export default {
     }
 }
 </style>
-  
